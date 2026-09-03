@@ -52,4 +52,74 @@ The concepts covered during this session were implemented using independent Java
 - Inheritance
 - Polymorphism
 - Abstraction
+# Mini-Project
+## Employee Payroll System 
+Employee Payroll System
+│
+├── Employee.java
+├── FullTimeEmployee.java
+├── PartTimeEmployee.java
+├── ContractEmployee.java
+└── Main.java
+## Project Overview
 
+Employee Payroll System is a console-based Java application used to manage basic employee information and calculate salaries for different types of employees.
+
+The project is created to practice and understand the core concepts of Object-Oriented Programming in Java.
+
+## Employee Types
+
+The system supports three types of employees:
+
+1. Full-Time Employee
+2. Part-Time Employee
+3. Contract Employee
+
+## Salary Calculation
+
+Each employee type has a different salary calculation.
+
+### Full-Time Employee
+
+Salary is calculated using:
+
+Base Salary + Allowance
+
+### Part-Time Employee
+
+Salary is calculated using:
+
+Hours Worked × Hourly Rate
+
+### Contract Employee
+
+Salary is calculated using:
+
+Contract Amount
+
+## OOP Concepts Used
+
+### 1. Encapsulation
+
+Employee data is kept private and accessed using methods such as getters and setters.
+
+### 2. Inheritance
+
+Full-Time, Part-Time, and Contract employees inherit common properties and methods from the `Employee` class.
+
+### 3. Abstraction
+
+`Employee` is an abstract class that defines common employee information and the `calculateSalary()` method.
+
+Each child class provides its own implementation of salary calculation.
+
+### 4. Polymorphism
+
+An `Employee` reference can refer to different employee objects.
+
+Example:
+
+```java
+Employee employee;
+
+employee = new FullTimeEmployee(...);
